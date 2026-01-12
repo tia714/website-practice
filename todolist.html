@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="icon" type="image/x-icon" href="clipboardlist.svg">
+    <link rel="stylesheet" href="todolist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<a class="home" href="index.html"><i class="fa-solid fa-house"></i></a>
+
+<div class="container">
+    <h1>To Do List</h1>
+
+    <div class="progress">
+        <div id="bar">
+            <div id="barp">
+
+            </div>
+        </div>
+        <div id="number">
+            <p id="num">0/0</p>
+        </div>
+    </div>
+
+    <form class="inputarea">
+        <input type="text" id="taskinput" placeholder="Add new task">
+        <input type="date" id="taskdeadline">
+        <button type="submit" id="tasksubmit"><i class="fa-solid fa-plus"></i></button>
+    </form>
+
+    
+    <ul id="tasklist"></ul>
+    
+
+</div>
+
+<script src="todolist.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+:root{
+    --textpink: rgb(71, 5, 40);
+    --midpink: rgb(193, 108, 153);
+    --softpink: rgb(252, 228, 241);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--softpink);
+    color: var(--textpink);
+    flex-direction: column;
+    gap: 20px;
+    background-image: linear-gradient(rgba(252, 228, 241, 0.4)), url('bgpinkflower.png');
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+}
+
+.progress{
+    padding: 10px 2px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#bar{
+    width: 90%;
+    height: 25px;
+    border-radius: 100px;
+    background-color: var(--midpink);
+    flex: 1;  
+}
+
+#barp{
+    width: 0%;
+    height: 25px;
+    border-radius: 100px;
+    background-color: var(--textpink);
+    transition: all 0.3s ease;
+}
+
+#num{
+    size: 100em;
+    justify-content: flex-end;
+}
+
+.inputarea{
+    padding: 10px 2px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size: 7em;
+    gap: 10px;
+}
+
+#taskinput{
+    border-radius: 30px;
+    background-color: var(--softpink);
+    border: 0px; 
+    width: 100%;
+    padding: 10px;
+    color: var(--textpink);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--midpink);
+}
+
+#tasksubmit{
+    border-radius: 100px;
+    background-color: var(--midpink);
+    border: 0px;    
+    padding: 10px;
+    color: white;
+    size: 20px;
+}
+
+.taskitem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    padding: 5px;
+    width: 100%;
+}
+
+.task{
+    display: flex;
+    flex: 1;  
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+    margin-right: 100px;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+#tasklist{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: none;
+    width: 100%;
+}
+
+.icons{
+    position: relative;
+    right: 0px;
+    justify-content: right;
+    align-items: right;
+    display: flex;
+    gap: 10px;  
+    cursor: pointer;
+    min-width: 50px;      
+    justify-content: flex-end;
+}
+
+.task.completed p{
+    text-decoration: line-through;
+    color: var(--midpink);
+}
+
+.checkbox{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: var(--softpink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox:checked{
+    background-color: var(--midpink);
+}
+
+.checkbox:checked::after{
+    content: "✔";
+    color: var(--textpink);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.taskdeadline{
+    font-size: 12px;
+    color: var(--midpink);
+}
+
+#taskdeadline{
+    color: var(--textpink);
+    border-radius: 100px;
+    background-color: var(--softpink);
+    border: 0px;
+    padding: 5px;
+}
+
+.home{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 30px;
+    color: var(--textpink);
+    cursor: pointer;
+}
+
+.home:hover{
+    color: var(--midpink);
+}

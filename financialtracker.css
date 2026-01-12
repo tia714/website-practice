@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oldenburg", serif;
+}
+
+:root{
+    --textblue: rgb(0, 70, 126);
+    --midblue: rgb(70, 145, 206);
+    --softblue: rgb(230, 243, 252);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--textblue);
+    flex-direction: column;
+    gap: 20px;
+    background-image: linear-gradient(rgba(190, 205, 239, 0.5)), url('bgbluetiles.jpg');
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    margin: 50px 0px;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+.money{
+    background-color: var(--softblue);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+    width: 100%; 
+    justify-content: center;
+}
+
+.mondet{
+    justify-content: space-between;
+    display: flex;
+}
+
+.income, .expense{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.income h3{
+    color: rgb(0, 95, 0);
+}
+
+.expense h3{
+    color: rgb(82, 0, 0);
+}
+
+#balance{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.list{
+    list-style: none;
+    padding: 5px;
+}
+
+.transaction{
+    background-color: var(--softblue);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.addtransaction{
+    background-color: var(--softblue);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form{
+    display: flex;
+    align-items: left;
+    padding: 10px;
+}
+
+.formcontrol{
+    gap: 50px;
+    justify-content: space-between;
+}
+
+#type{
+    margin-left: 10px;
+    padding: 5px;
+    width: 160px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    color: var(--textblue);
+    border: 0px;
+}
+
+.part{
+    gap: 10px;
+    justify-content: space-between;
+    align-items: left;
+    padding: 10px;
+    flex: 0.9;
+}
+
+.partt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex: 0.1;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input, textarea {
+  border: none;
+  border-radius: 20px;
+  color: var(--textblue);
+  padding: 5px;
+  margin: 5px 0px;
+  width: 100%;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--midblue);
+}
+
+.add{
+    border: none;
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+    font-size: 40px;
+    background-color: var(--textblue);
+    color: white;
+}
+
+.plus .type {
+    color: rgb(0, 95, 0);
+}
+
+.minus .type {
+    color: rgb(82, 0, 0);
+}
+
+.transac {
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px 15px;
+    background-color: white;
+    border-radius: 45px;
+}
+
+.text {
+    
+    width: 65%;
+
+}
+
+.transac .amount {
+    
+    width: 30%;
+}
+
+.delete {
+    border: none;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    border-radius: 100px;
+}
+
+.oneline{
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.home{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 30px;
+    color: var(--textblue);
+    cursor: pointer;
+}
+
+.home:hover{
+    color: var(--midblue);
+}

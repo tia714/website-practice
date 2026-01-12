@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Tracker</title>
+    <link rel="icon" type="image/x-icon" href="wallet.svg">
+    <link rel="stylesheet" href="financialtracker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oldenburg&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+<a class="home" href="index.html"><i class="fa-solid fa-house"></i></a>
+
+<div class="container">
+    <h1>Financial Tracker</h1>
+
+    <div class="money">
+        <h2 id="balance">Rp 0</h2>
+        <div class="mondet">
+            <div class="income">
+                <h3>Income</h3>
+                <p id="moneyplus" class="moneyplus">+Rp 0</p>
+            </div>
+            <div class="expense">
+                <h3>Expense</h3>
+                <p id="moneymins" class="moneymins">-Rp 0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="transaction">
+        <h2>Transactions</h2>
+        <ul id="list" class="list">
+            <li></li>
+        </ul>
+    </div>
+
+    <div class="addtransaction">
+        <h2>Add Transactions</h2>
+        <form id="form">
+            <div class="part">
+                <div class="formcontrol">
+                    <label for="options">Type</label>
+                    <select id="type">
+                        <option value="Income">Income</option>
+                        <option value="Expense">Expense</option>
+                    </select>
+                </div>
+                <div class="formcontrol">
+                    <label for="text">Name</label>
+                    <input type="text" placeholder="Enter description" id="text" required>
+                </div>
+                <div class="formcontrol">
+                    <label for="amount">Amount</label>
+                    <input type="number" placeholder="Enter amount" id="amount" min="0" required>
+                </div>
+            </div>
+            <div class="partt">
+                <button class="add"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="financialtracker.js"></script>
+</body>
+
+</html>

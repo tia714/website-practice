@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="icon" type="image/x-icon" href="file.svg">
+    <link rel="stylesheet" href="wordcounter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=GFS+Didot&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+<a class="home" href="index.html"><i class="fa-solid fa-house"></i></a>
+
+<div class="container">
+    <h1>Word Counter</h1>
+    <!--<input type="text" placeholder="Enter name" id="name">-->
+    <textarea id="inputword"></textarea>
+    <div class="row">
+        <label><span id="totalwords">0</span><br  > WORDS<br  >&nbsp</label>
+        <label><span id="totalcharsspace">0</span><br  > CHARACTERS (with space)</label>
+        <label><span id="totalcharsnospace">0</span><br  > CHARACTERS (without space)</label>
+        <label><span id="totalspecialchars">0</span><br  > SPECIAL CHARACTERS</label>
+        <label><span id="totalreadtime">0</span><br  > MINUTE(S) (read time)</label>
+
+    </div>
+    <!--
+    
+    <button id="reset">Delete Text</button>
+    <button id="save">Save Text</button>
+    <ul id="history"></ul>
+-->
+
+</div>
+
+<script src="wordcounter.js"></script>
+</body>
+
+</html>

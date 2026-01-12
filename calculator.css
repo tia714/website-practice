@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+:root{
+    --textgreen: rgb(5, 16, 9);
+    --midgreen: rgb(49, 76, 58);
+    --softgreen: rgb(201, 219, 207);
+    --softyellow: rgb(221, 218, 193);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--textgreen);
+    flex-direction: column;
+    gap: 20px;
+    background-image: linear-gradient(rgba(180, 255, 205, 0.4)), url('bggreen.jpg');
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    margin: 10px 0px;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+.calculator{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--midgreen);
+    padding: 25px;
+    border-radius: 30px;
+}
+
+button{
+    width: 65px;
+    height: 65px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--softgreen);
+    color: var(--textgreen);
+    text-align: center;
+    transition: 0.2s;
+    bottom: none;
+    border: none;
+}
+
+button:hover{
+    color: var(--softgreen);
+    background-color: var(--textgreen);
+}
+
+#keys{
+    display: grid;
+    width: 85%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#display{
+    width: 85%;
+    height: 80px;
+    text-align: right;
+    border-radius: 20px;
+    font-size: 35px;
+    padding: 10px;
+    background-color: var(--textgreen);
+    color: var(--softgreen);
+    border: none;
+}
+
+.operator{
+    background-color: var(--textgreen);
+    color: var(--softgreen);
+}
+
+.operator:hover{
+    background-color: var(--softgreen);
+    color: var(--textgreen);
+}
+
+.zero{
+    grid-column: span 2;
+    width: 100%;
+}
+
+.special{
+    background-color: var(--softyellow);
+    color: var(--textgreen);
+}
+
+button:active{
+    transform: scale(0.8);
+}
+
+.save{
+    background-color: var(--textgreen);
+    color: var(--softyellow);
+}
+
+.save:hover{
+    background-color: var(--softyellow);
+    color: var(--textgreen);
+}
+
+.home{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 30px;
+    color: var(--textgreen);
+    cursor: pointer;
+}
+
+.home:hover{
+    color: var(--midgreen);
+}
